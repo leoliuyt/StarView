@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "LEOStarView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet LEOStarView *starView;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @end
 
@@ -16,7 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.starView.currentPercent = 0.4;
+    self.starView.markType = EMarkTypeDecimal;
+    self.starView.markComplete = ^(CGFloat score){
+        self.scoreLabel.text = [NSString stringWithFormat:@"%.1f分",score];
+    };
 }
 
 - (void)didReceiveMemoryWarning {

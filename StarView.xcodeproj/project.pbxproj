@@ -13,6 +13,7 @@
 		9E06B6E71C51CF1A0010AE54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E06B6E51C51CF1A0010AE54 /* Main.storyboard */; };
 		9E06B6E91C51CF1A0010AE54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E06B6E81C51CF1A0010AE54 /* Assets.xcassets */; };
 		9E06B6EC1C51CF1A0010AE54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E06B6EA1C51CF1A0010AE54 /* LaunchScreen.storyboard */; };
+		9E06B6F61C51CF5F0010AE54 /* LEOStarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E06B6F51C51CF5F0010AE54 /* LEOStarView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9E06B6E81C51CF1A0010AE54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E06B6EB1C51CF1A0010AE54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E06B6ED1C51CF1A0010AE54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E06B6F41C51CF5F0010AE54 /* LEOStarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEOStarView.h; sourceTree = "<group>"; };
+		9E06B6F51C51CF5F0010AE54 /* LEOStarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEOStarView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		9E06B6DB1C51CF1A0010AE54 /* StarView */ = {
 			isa = PBXGroup;
 			children = (
+				9E06B6F31C51CF310010AE54 /* StarView */,
 				9E06B6DF1C51CF1A0010AE54 /* AppDelegate.h */,
 				9E06B6E01C51CF1A0010AE54 /* AppDelegate.m */,
 				9E06B6E21C51CF1A0010AE54 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				9E06B6DD1C51CF1A0010AE54 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E06B6F31C51CF310010AE54 /* StarView */ = {
+			isa = PBXGroup;
+			children = (
+				9E06B6F41C51CF5F0010AE54 /* LEOStarView.h */,
+				9E06B6F51C51CF5F0010AE54 /* LEOStarView.m */,
+			);
+			path = StarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +118,7 @@
 		9E06B6D11C51CF190010AE54 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LEO;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = leoliu;
 				TargetAttributes = {
@@ -150,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E06B6E41C51CF1A0010AE54 /* ViewController.m in Sources */,
+				9E06B6F61C51CF5F0010AE54 /* LEOStarView.m in Sources */,
 				9E06B6E11C51CF1A0010AE54 /* AppDelegate.m in Sources */,
 				9E06B6DE1C51CF1A0010AE54 /* main.m in Sources */,
 			);
