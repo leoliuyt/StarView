@@ -19,8 +19,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.starView.currentPercent = 0.4;
-    self.starView.markType = EMarkTypeDecimal;
+//    self.starView.currentPercent = 0.4;
+//    self.starView.markType = EMarkTypeDecimal;
+    self.starView.currentIndex = 3;
+    self.starView.markType = EMarkTypeInteger;
     self.starView.markComplete = ^(CGFloat score){
         self.scoreLabel.text = [NSString stringWithFormat:@"%.1f分",score];
     };
