@@ -31,6 +31,7 @@ static CGFloat kStarWidth = 0.0;
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     self.backgroundColor = [UIColor clearColor];
 }
 
